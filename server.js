@@ -348,6 +348,10 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
+app.get('/status', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // CRUD Operations for Notes
 
 // Create a new note
